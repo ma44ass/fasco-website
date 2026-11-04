@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FASCO</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        /* fonts */
+        --font-poppins: "Poppins", sans-serif;
+        --font-volkhov: "Volkhov", serif;
+        --font-jost: "Jost", sans-serif;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="max-w-[1280px] mx-auto">
+      <!--Navigation-->
+      <nav class="flex justify-between items-center py-4">
+        <div class="font-volkhov text-[52px] text-[#484848]">FASCO</div>
+        <div class="flex items-center space-x-[70px] text-[#484848]">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Products</a>
+          <a href="#" class="flex items-center gap-1.5 cursor-pointer">
+            <span>Pages</span>
+            <img
+              src="assets/arrowDown.svg"
+              alt="Dropdown"
+              class="object-contain"
+            />
+          </a>
+        </div>
+        <div class="flex space-x-[20px]">
+          <img src="assets/loup.svg" alt="Search" />
+          <img src="assets/star.svg" alt="Favorites" />
+          <img src="assets/user.svg" alt="User" />
+          <div class="relative cursor-pointer">
+            <img src="assets/cart.svg" alt="Cart" />
+            <span
+              class="absolute -top-[45%] -right-[95%] bg-[#FF0606] text-white w-[24px] h-[24px] rounded-full flex items-center justify-center font-volkhov"
+            >
+              1
+            </span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="pt-[78px] flex flex-col items-center gap-5">
+        <p class="font-volkhov text-[42px] leading-[32px] capitalize">
+          Shopping Cart
+        </p>
+        <div class="font-jost leading-[24px] space-x-[15px]">
+          <span>Home</span>
+          <span>></span>
+          <span>Your Shopping Cart</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="max-w-[1240px] mx-auto mt-[70px]">
+        <div class="py-[35px] flex justify-between border-b border-[#00000063]">
+          <p class="font-volkhov text-[22px] leading-[32px]">Product</p>
+          <p class="font-volkhov text-[22px] leading-[32px]">Price</p>
+          <p class="font-volkhov text-[22px] leading-[32px]">Quantity</p>
+          <p class="font-volkhov text-[22px] leading-[32px]">Total</p>
+        </div>
+
+        <div class="py-[44px] flex justify-between border-b border-[#00000063]">
+          <div class="flex space-x-[22px]">
+            <div class="w-[168px]">
+              <img src="assets/produ6.svg" class="object-cover" alt="" />
+            </div>
+
+            <div class="space-y-[14px] max-w-[176px]">
+              <p class="font-volkhov text-[22px] capitalize">
+                Mini dress with ruffled straps
+              </p>
+              <p class="text-[#8A8A8A] font-poppins leading-[42px] text-[22px]">
+                Color : Red
+              </p>
+              <p
+                class="text-[#8A8A8A] font-poppins leading-[42px] text-[22px] underline"
+              >
+                Remove
+              </p>
+            </div>
+
+            <div class="font-volkhov text-[22px] leading-[32px]">$14.90</div>
+          </div>
+
+          <div
+            class="font-poppins text-[25px] border border-[#8A8A8A] max-h-[42px] rounded-[4px] space-x-[22px] flex items-center justify-between px-[10px]"
+          >
+            <span class="text-[#171717]">-</span>
+            <p class="text-[#8A8A8A]">01</p>
+            <span class="text-[#171717]">+</span>
+          </div>
+          <div class="font-volkhov text-[22px] leading-[32px]">$14.90</div>
+        </div>
+
+        <div class="flex max-w-[613px] w-full ml-auto">
+          <div class="w-full">
+            <div
+              class="pt-[31px] pb-[21px] flex items-center space-x-[13px] border-b border-[#00000063]"
+            >
+              <input
+                type="checkbox"
+                class="appearance-none w-[32px] h-[32px] border border-[3px] bg-white checked:bg-black"
+              />
+              <label
+                class="font-poppins text-[22px] leading-[42px] text-[#8A8A8A]"
+              >
+                For <span class="text-black"> $10.00 </span>please wrap the
+                product</label
+              >
+            </div>
+
+            <div
+              class="flex justify-between font-volkhov leading-[32px] text-[22px] capitalize pt-[45px]"
+            >
+              <p>Subtotal</p>
+              <p>$100.00</p>
+            </div>
+            <button
+              class="rounded-[10px] w-full bg-black text-white py-[25px] mt-[30px] font-poppins"
+            >
+              Checkout
+            </button>
+            <p
+              class="font-volkhov text-[22px] text-center underline capitalize mt-[14px]"
+            >
+              View Cart
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="max-w-[1400px] mx-auto mt-[109px] flex justify-between items-center"
+      >
+        <img
+          class="object-contain"
+          src="assets/fasco-section6-card1.svg"
+          alt=""
+        />
+        <div class="text-center space-y-[20px]">
+          <p class="font-volkhov text-[46px] text-[#484848]">
+            Subscribe To Our Newsletter
+          </p>
+          <p class="px-[10px] font-poppins leading-[26px] text-[#8A8A8A]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+            sollicitudin
+          </p>
+          <input
+            type="text"
+            placeholder="michael@ymail.com"
+            class="mt-[10px] py-[28px] pl-[30px] text-left w-full shadow-[0px_3.02px_3.15px_0px_#00000002,_0px_13.28px_6.52px_0px_#00000004,_0px_32.6px_13px_0px_#00000005,_0px_62.79px_25.48px_0px_#00000006,_0px_105.65px_46.85px_0px_#00000008,_0px_163px_80px_0px_#0000000A]"
+          />
+        </div>
+
+        <img class="object-contain" src="assets/fasco-section6-card2.svg" />
+      </section>
+    </main>
+  </body>
+
+  <footer class="border-t border-[#DEDFE1] space-y-[50px] py-[30px] mt-[50px]">
+    <div class="flex justify-between items-center max-w-[1280px] mx-auto">
+      <div class="font-volkhov text-[32px] text-[#484848]">FASCO</div>
+      <div class="flex items-center space-x-[70px] text-[#484848]">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Products</a>
+        <a href="#" class="flex items-center gap-1.5 cursor-pointer">
+          <span>Pages</span>
+          <img
+            src="assets/arrowDown.svg"
+            alt="Dropdown"
+            class="object-contain"
+          />
+        </a>
+      </div>
+    </div>
+
+    <p
+      class="font-poppins text-[12px] leading-[26px] text-[#484848] text-center"
+    >
+      Copyright © 2022 FASCO . All Rights Reseved.
+    </p>
+  </footer>
+</html>
