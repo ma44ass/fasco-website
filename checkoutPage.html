@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FASCO - Checkout</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        /* fonts */
+        --font-poppins: "Poppins", sans-serif;
+        --font-volkhov: "Volkhov", serif;
+        --font-jost: "Jost", sans-serif;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="border-b border-[#00000063]">
+      <div class="max-w-[1280px] mx-auto">
+        <nav class="flex justify-between items-center py-4 font-poppins">
+          <div class="font-volkhov text-[52px] text-[#484848]">FASCO</div>
+          <div class="flex items-center space-x-[70px] text-[#484848]">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Products</a>
+            <a href="#" class="flex items-center gap-1.5 cursor-pointer">
+              <span>Pages</span>
+              <img
+                src="assets/arrowDown.svg"
+                alt="Dropdown"
+                class="object-contain"
+              />
+            </a>
+          </div>
+          <div class="flex space-x-[20px]">
+            <img src="assets/loup.svg" alt="Search" />
+            <img src="assets/star.svg" alt="Favorites" />
+            <img src="assets/user.svg" alt="User" />
+            <div class="relative cursor-pointer">
+              <img src="assets/cart.svg" alt="Cart" />
+              <span
+                class="absolute -top-[45%] -right-[95%] bg-[#FF0606] text-white w-[24px] h-[24px] rounded-full flex items-center justify-center font-volkhov"
+              >
+                1
+              </span>
+            </div>
+          </div>
+        </nav>
+
+        <div class="pt-[78px] text-center">
+          <p
+            class="font-volkhov text-[42px] leading-[32px] capitalize mb-[44px]"
+          >
+            FASCO Demo Checkout
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="border-b border-[#00000063] grid grid-cols-2">
+        <div class="pr-[33px] border-r border-[#00000063] ml-[300px]">
+          <form class="space-y-[60px] text-[#8A8A8A] py-[80px]">
+            <div>
+              <div
+                class="flex justify-between items-center w-full space-y-[34px]"
+              >
+                <p class="font-volkhov text-[46px] text-[#484848]">Contact</p>
+                <p class="font-poppins">
+                  Have an account?<span class="text-[#1456FF]">
+                    Create Account
+                  </span>
+                </p>
+              </div>
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+              />
+            </div>
+
+            <div>
+              <p class="font-volkhov text-[46px] text-[#484848]">Delivery</p>
+
+              <div class="space-y-[16px]">
+                <input
+                  type="select"
+                  placeholder="Country/Region"
+                  class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+                />
+
+                <div class="flex space-x-[12px]">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+                  />
+                </div>
+
+                <input
+                  type="text"
+                  placeholder="Address"
+                  class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+                />
+
+                <div class="flex space-x-[12px]">
+                  <input
+                    type="text"
+                    placeholder="City"
+                    class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Postal Code"
+                    class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+                  />
+                </div>
+
+                <div class="flex align-center space-x-[10px]">
+                  <input
+                    type="checkbox"
+                    class="appearance-none w-[32px] h-[32px] border border-[3px] bg-white border-black checked:bg-black"
+                  />
+                  <label class="leading-[42px] font-poppins"
+                    >Save This Info for future</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p class="font-volkhov text-[46px] text-[#484848]">Payment</p>
+              <div class="relative">
+                <input
+                  type="select"
+                  placeholder="Credit Card"
+                  class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+                />
+                <div class="space-x-[8px] flex absolute top-[33%] right-[5%]">
+                  <img src="assets/Mastercard.png" class="w-[50px] h-[25px]" />
+                  <img src="assets/arrowDown.svg" class="w-[12px]" />
+                </div>
+              </div>
+
+              <div class="space-y-[7px]">
+                <div class="bg-[#F5F5F5] space-y-[7px] py-[18px] px-[20px]">
+                  <div class="relative">
+                    <input
+                      type="text"
+                      placeholder="Card Number"
+                      class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+                    />
+
+                    <span>
+                      <img
+                        src="assets/lock.svg"
+                        class="absolute top-[33%] right-[5%]"
+                    /></span>
+                  </div>
+
+                  <div class="flex space-x-[5px]">
+                    <input
+                      type="text"
+                      placeholder="Expiration Date"
+                      class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+                    />
+
+                    <input
+                      type="text"
+                      placeholder="Security Code"
+                      class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+                    />
+                  </div>
+
+                  <input
+                    type="text"
+                    placeholder="Card Holder Name"
+                    class="appareance-none border border-[#8A8A8A] py-[23px] px-[28px] w-full"
+                  />
+
+                  <div class="flex align-center space-x-[10px]">
+                    <input
+                      type="checkbox"
+                      class="appearance-none w-[32px] h-[32px] border border-black border-[3px] bg-white checked:bg-black"
+                    />
+                    <label class="leading-[42px] font-poppins"
+                      >Save This Info for future</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <button
+                class="rounded-[10px] w-full bg-black text-white py-[25px] mt-[30px] font-poppins"
+              >
+                Pay Now
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="bg-[#F5F5F5] p-[82px] max-h-[960px]">
+          <div class="space-y-[21px] max-w-[560px]">
+            <div class="flex items-center space-x-[21px] w-full">
+              <div class="max-w-[137px] relative">
+                <img src="assets/produ6.svg" alt="" class="object-contain" />
+                <span
+                  class="absolute bottom-[95%] left-[95%] bg-[#FF0606] text-white w-[24px] h-[24px] rounded-full flex items-center justify-center font-volkhov"
+                  >1</span
+                >
+              </div>
+
+              <div class="w-full mb-[21px]">
+                <p class="text-[18px] capitalize font-volkhov">
+                  Mini dress with ruffled straps
+                </p>
+                <div class="flex justify-between">
+                  <p class="text-[#484848]">Red</p>
+                  <p class="text-[#484848]">$100.00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-[21px]">
+              <div class="flex items-center space-x-[17px]">
+                <input
+                  type="text"
+                  placeholder=" Discount code"
+                  class="appareance-none bg-white px-[28px] py-[24px] max-w-[380px]"
+                />
+                <button
+                  class="rounded-[10px] bg-black text-white py-[25px] font-poppins flex-grow"
+                >
+                  Apply
+                </button>
+              </div>
+
+              <div class="text-[#484848] font-poppins space-y-[12px]">
+                <div class="flex justify-between">
+                  <p>Subtotal</p>
+                  <p>$100.00</p>
+                </div>
+                <div class="flex justify-between">
+                  <p>Shipping</p>
+                  <p>$40.00</p>
+                </div>
+                <div class="flex justify-between">
+                  <p>Total</p>
+                  <p class="text-black">$140.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="max-w-[1400px] mx-auto mt-[109px] flex justify-between items-center"
+      >
+        <img
+          class="object-contain"
+          src="assets/fasco-section6-card1.svg"
+          alt=""
+        />
+        <div class="text-center space-y-[20px]">
+          <p class="font-volkhov text-[46px] text-[#484848]">
+            Subscribe To Our Newsletter
+          </p>
+          <p class="px-[10px] font-poppins leading-[26px] text-[#8A8A8A]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+            sollicitudin
+          </p>
+          <input
+            type="text"
+            placeholder="michael@ymail.com"
+            class="mt-[10px] py-[28px] pl-[30px] text-left w-full shadow-[0px_3.02px_3.15px_0px_#00000002,_0px_13.28px_6.52px_0px_#00000004,_0px_32.6px_13px_0px_#00000005,_0px_62.79px_25.48px_0px_#00000006,_0px_105.65px_46.85px_0px_#00000008,_0px_163px_80px_0px_#0000000A]"
+          />
+
+          <button
+            class="font-poppins text-white bg-black text-center rounded-[10px] py-[20px] px-[44px] shadow-[0px_20px_35px_0px_#00000026]"
+          >
+            Subscribe Now
+          </button>
+        </div>
+
+        <img
+          class="object-contain"
+          src="assets/fasco-section6-card2.svg"
+          alt=""
+        />
+      </section>
+    </main>
+  </body>
+  <footer class="border-t border-[#DEDFE1] space-y-[50px] py-[30px] mt-[50px]">
+    <div class="flex justify-between items-center max-w-[1280px] mx-auto">
+      <div class="font-volkhov text-[32px] text-[#484848]">FASCO</div>
+      <div class="flex items-center space-x-[70px] text-[#484848]">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Products</a>
+        <a href="#" class="flex items-center gap-1.5 cursor-pointer">
+          <span>Pages</span>
+          <img
+            src="assets/arrowDown.svg"
+            alt="Dropdown"
+            class="object-contain"
+          />
+        </a>
+      </div>
+    </div>
+
+    <p
+      class="font-poppins text-[12px] leading-[26px] text-[#484848] text-center"
+    >
+      Copyright © 2022 FASCO . All Rights Reseved.
+    </p>
+  </footer>
+</html>
