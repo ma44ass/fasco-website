@@ -36,7 +36,7 @@
           <div class="font-volkhov text-[52px] text-[#484848]">FASCO</div>
           <div class="flex items-center space-x-[70px] text-[#484848]">
             <a href="#">Home</a>
-            <a href="#">Shop</a>
+            <a href="shopPage.html">Shop</a>
             <a href="#">Products</a>
             <a href="#" class="flex items-center gap-1.5 cursor-pointer">
               <span>Pages</span>
@@ -72,8 +72,8 @@
       </div>
     </header>
     <main>
-      <section class="border-b border-[#00000063] grid grid-cols-2">
-        <div class="pr-[33px] border-r border-[#00000063] ml-[300px]">
+      <section class="max-w-[1280px] mx-auto grid grid-cols-2">
+        <div class="pr-[33px] border-r border-[#00000063]">
           <form class="space-y-[60px] text-[#8A8A8A] py-[80px]">
             <div>
               <div
@@ -217,8 +217,9 @@
           </form>
         </div>
 
-        <div class="bg-[#F5F5F5] p-[82px] max-h-[960px]">
-          <div class="space-y-[21px] max-w-[560px]">
+        <div class="relative">
+          <div class="absolute top-0 left-0 w-[50vw] h-[68%] bg-[#F9F9F9] -z-10"></div>
+          <div class="ml-[82px] space-y-[21px] max-w-[560px] pt-[52px]">
             <div class="flex items-center space-x-[21px] w-full">
               <div class="max-w-[137px] relative">
                 <img src="assets/produ6.svg" alt="" class="object-contain" />
@@ -247,7 +248,7 @@
                   class="appareance-none bg-white px-[28px] py-[24px] max-w-[380px]"
                 />
                 <button
-                  class="rounded-[10px] bg-black text-white py-[25px] font-poppins flex-grow"
+                  class="rounded-[10px] bg-black text-white py-[25px] px-[57px] font-poppins "
                 >
                   Apply
                 </button>
@@ -273,9 +274,10 @@
       </section>
 
       <section
-        class="max-w-[1400px] mx-auto mt-[109px] flex justify-between items-center"
+        class="pt-[109px] border-t border-[#00000063]"
       >
-        <img
+      <div class="max-w-[1280px] mx-auto flex justify-between items-center">
+          <img
           class="object-contain"
           src="assets/fasco-section6-card1.svg"
           alt=""
@@ -307,6 +309,9 @@
           src="assets/fasco-section6-card2.svg"
           alt=""
         />
+
+      </div>
+
       </section>
     </main>
   </body>
@@ -315,7 +320,7 @@
       <div class="font-volkhov text-[32px] text-[#484848]">FASCO</div>
       <div class="flex items-center space-x-[70px] text-[#484848]">
         <a href="#">Home</a>
-        <a href="#">Shop</a>
+        <a href="shopPage.html">Shop</a>
         <a href="#">Products</a>
         <a href="#" class="flex items-center gap-1.5 cursor-pointer">
           <span>Pages</span>
