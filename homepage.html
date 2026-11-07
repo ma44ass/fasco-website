@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.cdnfonts.com/css/digital-numbers"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Online Shopping</title>
+    <style type="text/tailwindcss">
+      @theme {
+        /* colors */
+
+        --font-poppins: "Poppins", sans-serif;
+        --font-volkhov: "Volkhov", serif;
+        --font-jost: "Jost", sans-serif;
+        --font-digital: "Digital Numbers", sans-serif;
+      }
+
+      .outline-text {
+        -webkit-text-stroke: 1.5px #484848;
+        color: transparent;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="max-w-[1280px] mx-auto space-y-[94px] pt-[70px]">
+      <!--Navigation-->
+      <nav class="flex justify-between items-center py-4 px-[24px]">
+        <div class="font-volkhov text-[52px] text-[#484848]">FASCO</div>
+        <div class="flex items-center space-x-[70px] text-[#484848]">
+          <a href="#">Home</a>
+          <a href="shopPage.html">Deals</a>
+          <a href="#">New Arrivals</a>
+          <a href="#">Packages</a>
+          <a href="#">Sign In</a>
+          <a
+            class="bg-black text-white px-[46px] py-[20px] rounded-[10px] shadow-[0px_20px_35px_0px_#00000026]"
+          >
+            Sign Up</a
+          >
+        </div>
+      </nav>
+
+      <div class="grid grid-cols-3 gap-x-[49px] px-[24px] h-[750px]">
+        <div class="rounded-[10px] bg-[#E0E0E0]">
+          <div class="w-full h-full flex justify-center items-center relative">
+            <img
+              src="assets/fasco-main1.svg"
+              alt="model sitting on a chair"
+              class="absolute bottom-0"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center space-y-[36px]">
+          <div>
+            <img
+              src="assets/fasco-main2.svg"
+              alt="a bunch of women posing"
+              class="w-full object-cover"
+            />
+          </div>
+
+          <div class="items-center w-full text-center font-poppins font-medium">
+            <div>
+              <p class="text-[#484848] tracking-[-5%] text-[91px] uppercase">
+                ultimate
+              </p>
+              <p
+                class="leading-none tracking-[-5.5%] text-[187px] uppercase outline-text"
+              >
+                sale
+              </p>
+              <p
+                class="leading-none tracking-[10%] text-[20px] text-[#484848] uppercase"
+              >
+                new collection
+              </p>
+            </div>
+
+            <button
+              class="bg-black text-white text-[16px] px-[60px] py-[20px] rounded-[10px] mt-[19px] uppercase shadow[0px_20px_35px_0px_#00000026];"
+            >
+              shop now
+            </button>
+          </div>
+
+          <div>
+            <img
+              src="assets/fasco-main3.svg"
+              alt="a bunch of women posing and smiling"
+              srcset=""
+            />
+          </div>
+        </div>
+
+        <div class="rounded-[10px] bg-[#E0E0E0]">
+          <div class="w-full h-full flex justify-center items-center relative">
+            <img
+              src="assets/fasco-main4.svg"
+              alt="model sitting on a chair"
+              class="object-cover absolute bottom-0"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="mt-[27px]">
+        <div
+          class="max-w-[1280px] px-[24px] py-[82px] mx-auto flex justify-between"
+        >
+          <img src="assets/chanel-logo.svg" alt="brand logo" />
+          <img src="assets/luis-vuitton-logo.svg" alt="brand logo" />
+          <img src="assets/prada-logo.svg" alt="brand logo" />
+          <img src="assets/calvin-klein-logo.svg" alt="brand logo" />
+          <img src="assets/denim-logo.svg" alt="brand logo" />
+        </div>
+      </section>
+
+      <section class="bg-[#FAFAFA] pt-[100px] w-full overflow-hidden">
+        <div
+          class="max-w-[1280px] px-[24px] py-[82px] mx-auto flex space-x-[36px]"
+        >
+          <div class="space-y-[50px] max-w-[444px]">
+            <div class="space-y-[20px]">
+              <p class="font-volkhov text-[46px] text-[#484848]">
+                Deals Of The Month
+              </p>
+              <p class="font-poppins text-[#8A8A8A] leading-[26px] pl-[8px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque
+                duis ultrices sollicitudin
+              </p>
+              <button
+                class="bg-black text-white px-[70px] py-[20px] rounded-[10px] shadow-[0px_20px_35px_0px_#00000026] capitalize"
+              >
+                buy now
+              </button>
+            </div>
+
+            <div class="space-y-[15px] max-w-[394px]">
+              <p
+                class="font-poppins font-medium text-[28px] text-[#484848] pr-[33px]"
+              >
+                Hurry, Before It’s Too Late!
+              </p>
+              <div class="flex space-x-[30px]">
+                <div class="space-y-[15px] items-center text-center">
+                  <div
+                    class="bg-white py-[22px] px-[12px] rounded-[10px] shadow-[0px_4px_14px_1px_#00000029] w-[76px] h-[76px] flex justify-center items-center"
+                  >
+                    <span class="font-digital text-[32px]">02</span>
+                  </div>
+                  <p
+                    class="font-poppins text-[24px] leading-[120%] text-[#484848] capitalize"
+                  >
+                    Days
+                  </p>
+                </div>
+
+                <div class="space-y-[15px] items-center text-center">
+                  <div
+                    class="bg-white py-[22px] px-[12px] rounded-[10px] shadow-[0px_4px_14px_1px_#00000029] w-[76px] h-[76px] flex justify-center items-center"
+                  >
+                    <span class="font-digital text-[32px]">06</span>
+                  </div>
+                  <p
+                    class="font-poppins text-[24px] leading-[120%] text-[#484848] capitalize"
+                  >
+                    Days
+                  </p>
+                </div>
+
+                <div class="space-y-[15px] items-center text-center">
+                  <div
+                    class="bg-white py-[22px] px-[12px] rounded-[10px] shadow-[0px_4px_14px_1px_#00000029] w-[76px] h-[76px] flex justify-center items-center"
+                  >
+                    <span class="font-digital text-[32px]">05</span>
+                  </div>
+                  <p
+                    class="font-poppins text-[24px] leading-[120%] text-[#484848] capitalize"
+                  >
+                    minss
+                  </p>
+                </div>
+
+                <div class="space-y-[15px] items-center text-center">
+                  <div
+                    class="bg-white py-[22px] px-[12px] rounded-[10px] shadow-[0px_4px_14px_1px_#00000029] w-[76px] h-[76px] flex justify-center items-center"
+                  >
+                    <span class="font-digital text-[32px]">30</span>
+                  </div>
+                  <p
+                    class="font-poppins text-[24px] leading-[120%] text-[#484848] capitalize"
+                  >
+                    sec
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex relative space-x-[24px] h-[582px]">
+            <!-- arrows -->
+            <div class="flex space-x-[16px] items-end">
+              <div
+                class="w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full shadow-[0px_4px_14px_1px_#00000029]"
+              >
+                <img src="assets/icon-left.svg" />
+              </div>
+              <div
+                class="w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full shadow-[0px_4px_14px_1px_#00000029]"
+              >
+                <img src="assets/icon-right.svg" />
+              </div>
+            </div>
+
+            <!-- gallery -->
+            <div class="h-[582px] flex gap-[24px]">
+              <!-- first img -->
+              <div class="relative w-[404px]">
+                <img
+                  src="assets/fasco-icon-section1.svg"
+                  class="object-cover w-full"
+                />
+                <div
+                  class="bg-white py-[32px] px-[26px] space-y-[8px] absolute bottom-[24px] left-[24px]"
+                >
+                  <div
+                    class="flex justify-center items-center space-x-[8px] font-poppins text-[#484848] leading-[150%]"
+                  >
+                    <p>01</p>
+                    <div
+                      class="border border-[#484848] w-[27px] h-0 bg-[#484848] opacity-[32%]"
+                    ></div>
+                    <p>Spring Sale</p>
+                  </div>
+                  <p
+                    class="font-poppins text-[#484848] text-[28px] leading-[120%]"
+                  >
+                    30% OFF
+                  </p>
+                </div>
+              </div>
+
+              <!-- second img -->
+
+              <div class="space-y-[69px] flex flex-col items-start">
+                <div class="h-[468px] w-[372px]">
+                  <img
+                    src="assets/fasco-icon-section2.svg"
+                    class="h-full w-full object-contain"
+                  />
+                </div>
+
+                <!-- navigation dots -->
+                <div class="flex gap-[20px] flex justify-center items-center">
+                  <div
+                    class="w-[27px] h-[27px] rounded-full border flex justify-center items-center"
+                  >
+                    <span
+                      class="w-[11px] h-[11px] bg-black rounded-full"
+                    ></span>
+                  </div>
+                  <div
+                    class="w-[11px] h-[11px] rounded-full bg-[#B6B6B6]"
+                  ></div>
+                  <div
+                    class="w-[11px] h-[11px] rounded-full bg-[#B6B6B6]"
+                  ></div>
+                  <div
+                    class="w-[11px] h-[11px] rounded-full bg-[#B6B6B6]"
+                  ></div>
+                </div>
+              </div>
+
+              <!--Third img-->
+              <div>
+                <div class="h-[468px] w-[372px]">
+                  <img
+                    src="assets/fasco-icon-section3.svg"
+                    class="h-full w-full object-contain object-left"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
