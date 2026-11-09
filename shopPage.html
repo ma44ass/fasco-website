@@ -43,17 +43,38 @@
         transform: rotate(8deg);
         z-index: 30;
       }
+
+      /*Navigation active state*/
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -4px;
+        left: 0;
+        background-color: #484848;
+        transition: width 0.3s ease-in-out;
+      }
+
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        width: 100%;
+      }
     </style>
   </head>
 
   <body>
-    <header class="max-w-[1280px] mx-auto">
+    <header class="max-w-[1280px] mx-auto pt-[70px]">
       <nav class="flex justify-between items-center py-4 px-[24px]">
         <div class="font-volkhov text-[52px] text-[#484848]">FASCO</div>
         <div class="flex items-center space-x-[70px] text-[#484848]">
-          <a href="#">Home</a>
-          <a href="shopPage.html">Shop</a>
-          <a href="#">Products</a>
+          <a href="homepage.html" class="nav-link">Home</a>
+          <a href="shopPage.html" class="nav-link active">Shop</a>
+          <a href="#" class="nav-link">Products</a>
           <a href="#" class="flex items-center gap-1.5 cursor-pointer">
             <span>Pages</span>
             <img
@@ -85,7 +106,9 @@
     </header>
 
     <main>
-      <section class="container max-w-[1280px] mx-auto flex mt-[103px] px-[24px]">
+      <section
+        class="max-w-[1280px] mx-auto flex mt-[103px]"
+      >
         <aside class="space-y-8 pr-4 max-w-[322px] w-full shrink-0">
           <h2 class="font-volkhov text-[30px] leading-[36px]">Filters</h2>
           <div class="space-y-4 max-w-[150px]">
@@ -253,9 +276,9 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-3 gap-x-[12px] gap-y-[30px] px-[12px]">
+          <div class="grid grid-cols-3 gap-x-[12px] gap-y-[30px] ">
             <!-- Produit 1 -->
-            <div class="group">
+            <div class="group px-[12px]">
               <div class="mb-[20px] w-full overflow-hidden">
                 <img
                   src="assets/produ1.svg"
@@ -265,9 +288,9 @@
               </div>
               <h4 class="font-volkhov leading-[24px]">Rounded Red Hat</h4>
               <p class="font-jost mt-[5px] leading-[24px]">$8.00</p>
-              <div class="flex gap-1.5 mt-[13px]">
+              <div class="flex gap-1.5 mt-[13px] py-2">
                 <span
-                  class="w-[26px] h-[26px] rounded-[13px] bg-[#FFD700] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
+                  class="w-[26px] h-[26px] rounded-full bg-[#FFD700] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
                 ></span>
                 <span
                   class="w-[26px] h-[26px] rounded-full bg-black cursor-pointer"
@@ -276,7 +299,7 @@
             </div>
 
             <!-- Produit 2 -->
-            <div class="group">
+            <div class="group px-[12px]">
               <div class="relative mb-[20px]">
                 <img
                   src="assets/produ2.svg"
@@ -290,9 +313,9 @@
               </div>
               <h4 class="font-volkhov leading-[24px]">Linen-Blend Shirt</h4>
               <p class="font-jost mt-[5px] leading-[24px]">$17.00</p>
-              <div class="flex gap-1.5 mt-[13px]">
+              <div class="flex gap-1.5 mt-[13px] py-2">
                 <span
-                  class="w-[26px] h-[26px] rounded-[13px] bg-[#8DB4D2] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
+                  class="w-[26px] h-[26px] rounded-full bg-[#8DB4D2] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_1px_1px_#000000] inline-block cursor-pointer"
                 ></span>
                 <span
                   class="w-[26px] h-[26px] rounded-full bg-[#FFD1DC] cursor-pointer"
@@ -301,7 +324,7 @@
             </div>
 
             <!-- Produit 3 -->
-            <div class="group">
+            <div class="group px-[12px]">
               <div class="mb-[20px] w-full overflow-hidden">
                 <img
                   src="assets/produ3.svg"
@@ -311,9 +334,9 @@
               </div>
               <h4 class="font-volkhov leading-[24px]">Long-sleeve Coat</h4>
               <p class="font-jost mt-[5px] leading-[24px]">$106.00</p>
-              <div class="flex gap-1.5 mt-[13px]">
+              <div class="flex gap-1.5 mt-[13px] py-2">
                 <span
-                  class="w-[26px] h-[26px] rounded-[13px] bg-[#EBE6DB] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
+                  class="w-[26px] h-[26px] rounded-full bg-[#EBE6DB] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
                 ></span>
                 <span
                   class="w-[26px] h-[26px] rounded-full bg-[#C1E1C1] cursor-pointer"
@@ -322,7 +345,7 @@
             </div>
 
             <!-- Produit 4 -->
-            <div class="group">
+            <div class="group px-[12px]">
               <div class="mb-[20px] w-full overflow-hidden">
                 <img
                   src="assets/produ4.svg"
@@ -332,9 +355,9 @@
               </div>
               <h4 class="font-volkhov leading-[24px]">Boxy Denim Hat</h4>
               <p class="font-jost mt-[5px] leading-[24px]">$25.00</p>
-              <div class="flex gap-1.5 mt-[13px]">
+              <div class="flex gap-1.5 mt-[13px] py-2">
                 <span
-                  class="w-[26px] h-[26px] rounded-[13px] bg-[#B1C5D4] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
+                  class="w-[26px] h-[26px] rounded-full bg-[#B1C5D4] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
                 ></span>
                 <span
                   class="w-[26px] h-[26px] rounded-full bg-[#063E66] cursor-pointer"
@@ -343,7 +366,7 @@
             </div>
 
             <!-- Produit 5 -->
-            <div class="group">
+            <div class="group px-[12px]">
               <div class="mb-[20px] w-full overflow-hidden">
                 <img
                   src="assets/produ5.svg"
@@ -353,9 +376,9 @@
               </div>
               <h4 class="font-volkhov leading-[24px]">Linen Plain Top</h4>
               <p class="font-jost mt-[5px] leading-[24px]">$25.00</p>
-              <div class="flex gap-1.5 mt-[13px]">
+              <div class="flex gap-1.5 mt-[13px] py-2">
                 <span
-                  class="w-[26px] h-[26px] rounded-[13px] bg-[#C1E1C1] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
+                  class="w-[26px] h-[26px] rounded-[13px] bg-[#C1E1C1] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_1px_1px_#000000] inline-block cursor-pointer"
                 ></span>
                 <span
                   class="w-[26px] h-[26px] rounded-full bg-[#C1E1C1] cursor-pointer"
@@ -364,7 +387,7 @@
             </div>
 
             <!-- Produit 6 -->
-            <div class="group">
+            <div class="group px-[12px]">
               <div class="mb-[20px] w-full overflow-hidden">
                 <img
                   src="assets/produ6.svg"
@@ -376,9 +399,9 @@
               <p class="font-jost mt-[5px] leading-[24px]">
                 $11.00 <span class="text-[#666666] line-through">$14.00</span>
               </p>
-              <div class="flex gap-1.5 mt-[13px]">
+              <div class="flex gap-1.5 mt-[13px] py-2">
                 <span
-                  class="w-[26px] h-[26px] rounded-[13px] bg-[#FFD1DC] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
+                  class="w-[26px] h-[26px] rounded-full bg-[#FFD1DC] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
                 ></span>
                 <span
                   class="w-[26px] h-[26px] rounded-full bg-[#C6AEC7] cursor-pointer"
@@ -390,7 +413,7 @@
             </div>
 
             <!-- Produit 7 -->
-            <div class="group">
+            <div class="group px-[12px]">
               <div class="mb-[20px] w-full overflow-hidden">
                 <img
                   src="assets/produ7.svg"
@@ -402,9 +425,9 @@
               <p class="font-jost mt-[5px] leading-[24px]">
                 $18.00 <span class="text-[#666666] line-through">$21.00</span>
               </p>
-              <div class="flex gap-1.5 mt-[13px]">
+              <div class="flex gap-1.5 mt-[13px] py-2">
                 <span
-                  class="w-[26px] h-[26px] rounded-[13px] bg-[#000000] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
+                  class="w-[26px] h-[26px] rounded-full bg-[#000000] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
                 ></span>
                 <span
                   class="w-[26px] h-[26px] rounded-full bg-[#836953] cursor-pointer"
@@ -413,7 +436,7 @@
             </div>
 
             <!-- Produit 8 -->
-            <div class="group">
+            <div class="group px-[12px]">
               <div class="mb-[20px] w-full overflow-hidden">
                 <img
                   src="assets/produ8.svg"
@@ -423,9 +446,9 @@
               </div>
               <h4 class="font-volkhov leading-[24px]">Rockstar Jacket</h4>
               <p class="font-jost mt-[5px] leading-[24px]">$22.00</p>
-              <div class="flex gap-1.5 mt-[13px]">
+              <div class="flex gap-1.5 mt-[13px] py-2">
                 <span
-                  class="w-[26px] h-[26px] rounded-[13px] bg-[#C6AEC7] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
+                  class="w-[26px] h-[26px] rounded-full bg-[#C6AEC7] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_1px_1px_#000000] inline-block cursor-pointer"
                 ></span>
                 <span
                   class="w-[26px] h-[26px] rounded-full bg-[#BEDCE3] cursor-pointer"
@@ -434,7 +457,7 @@
             </div>
 
             <!-- Produit 9 -->
-            <div class="group">
+            <div class="group px-[12px]">
               <div class="mb-[20px] w-full overflow-hidden">
                 <img
                   src="assets/produ9.svg"
@@ -444,9 +467,9 @@
               </div>
               <h4 class="font-volkhov leading-[24px]">Dotted Black Dress</h4>
               <p class="font-jost mt-[5px] leading-[24px]">$20.00</p>
-              <div class="flex gap-1.5 mt-[13px]">
+              <div class="flex gap-1.5 mt-[13px] py-2 py-2">
                 <span
-                  class="w-[26px] h-[26px] rounded-[13px] bg-[#063E66] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
+                  class="w-[26px] h-[26px] rounded-full bg-[#063E66] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"
                 ></span>
                 <span
                   class="w-[26px] h-[26px] rounded-full bg-[#000000] cursor-pointer"

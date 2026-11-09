@@ -29,20 +29,41 @@
         -webkit-text-stroke: 1.5px #484848;
         color: transparent;
       }
+
+      /*Navigation active state*/
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -4px;
+        left: 0;
+        background-color: #484848;
+        transition: width 0.3s ease-in-out;
+      }
+
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        width: 100%;
+      }
     </style>
   </head>
 
   <body>
     <header class="max-w-[1280px] mx-auto space-y-[94px] pt-[70px]">
       <!--Navigation-->
-      <nav class="flex justify-between items-center py-4 px-[24px]">
+      <nav class="flex justify-between items-center px-[24px]">
         <div class="font-volkhov text-[52px] text-[#484848]">FASCO</div>
         <div class="flex items-center space-x-[70px] text-[#484848]">
-          <a href="#">Home</a>
-          <a href="shopPage.html">Deals</a>
-          <a href="#">New Arrivals</a>
-          <a href="#">Packages</a>
-          <a href="#">Sign In</a>
+          <a href="homepage.html" class="nav-link active">Home</a>
+          <a href="shopPage.html" class="nav-link">Deals</a>
+          <a href="#" class="nav-link">New Arrivals</a>
+          <a href="#" class="nav-link">Packages</a>
+          <a href="#" class="nav-link">Sign In</a>
           <a
             class="bg-black text-white px-[46px] py-[20px] rounded-[10px] shadow-[0px_20px_35px_0px_#00000026]"
           >
@@ -51,7 +72,7 @@
         </div>
       </nav>
 
-      <div class="grid grid-cols-3 gap-x-[49px] px-[24px] h-[750px]">
+      <div class="grid grid-cols-3 gap-x-[49px] h-[750px]">
         <div class="rounded-[10px] bg-[#E0E0E0]">
           <div class="w-full h-full flex justify-center items-center relative">
             <img
@@ -118,7 +139,7 @@
     <main>
       <section class="mt-[27px]">
         <div
-          class="max-w-[1280px] px-[24px] py-[82px] mx-auto flex justify-between"
+          class="max-w-[1280px] py-[82px] mx-auto flex justify-between"
         >
           <img src="assets/chanel-logo.svg" alt="brand logo" />
           <img src="assets/luis-vuitton-logo.svg" alt="brand logo" />
@@ -130,7 +151,7 @@
 
       <section class="bg-[#FAFAFA] pt-[100px] w-full overflow-hidden">
         <div
-          class="max-w-[1280px] px-[24px] py-[82px] mx-auto flex space-x-[36px]"
+          class="max-w-[1280px] py-[82px] mx-auto flex space-x-[36px]"
         >
           <div class="space-y-[50px] max-w-[444px]">
             <div class="space-y-[20px]">
@@ -215,12 +236,12 @@
             <!-- arrows -->
             <div class="flex space-x-[16px] items-end">
               <div
-                class="w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full shadow-[0px_4px_14px_1px_#00000029]"
+                class="w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full shadow-[0px_4px_14px_1px_#00000029] hover:cursor-pointer"
               >
                 <img src="assets/icon-left.svg" />
               </div>
               <div
-                class="w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full shadow-[0px_4px_14px_1px_#00000029]"
+                class="w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full shadow-[0px_4px_14px_1px_#00000029] hover:cursor-pointer"
               >
                 <img src="assets/icon-right.svg" />
               </div>
