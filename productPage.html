@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.cdnfonts.com/css/digital-numbers"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>FASCO | Product </title>
+    <style type="text/tailwindcss">
+      @theme {
+        /* colors */
+
+        --font-poppins: "Poppins", sans-serif;
+        --font-volkhov: "Volkhov", serif;
+        --font-jost: "Jost", sans-serif;
+        --font-digital: "Digital Numbers", sans-serif;
+      }
+
+      .outline-text {
+        -webkit-text-stroke: 1.5px #484848;
+        color: transparent;
+      }
+
+      /*Navigation active state*/
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -4px;
+        left: 0;
+        background-color: #484848;
+        transition: width 0.3s ease-in-out;
+      }
+
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        width: 100%;
+      }
+
+      h2 {
+        @apply font-volkhov text-[46px] text-[#484848];
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="max-w-[1280px] mx-auto space-y-[94px] pt-[70px]">
+      <!--Navigation-->
+      <nav class="flex justify-between items-center py-4">
+        <div class="font-volkhov text-[52px] text-[#484848]">FASCO</div>
+        <div class="flex items-center space-x-[70px] text-[#484848]">
+          <a href="homepage.html" class="nav-link">Home</a>
+          <a href="shopPage.html" class="nav-link active">Shop</a>
+          <a href="product.html" class="nav-link">Products</a>
+          <a href="#" class="flex items-center gap-1.5 cursor-pointer">
+            <span>Pages</span>
+            <img
+              src="assets/arrowDown.svg"
+              alt="Dropdown"
+              class="object-contain"
+            />
+          </a>
+        </div>
+
+        <div class="flex space-x-[20px]">
+          <img src="assets/loup.svg" alt="Search" />
+          <img src="assets/star.svg" alt="Favorites" />
+          <img src="assets/user.svg" alt="User" />
+          <a href="cartPage.html">
+            <img src="assets/cart.svg" alt="Cart" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="max-w-[1280px] mx-auto grid grid-cols-2 items-start gap-[65px] pt-[81px] pb-[30px] " >
+            <div class="flex gap-[20px] max-w-[615px]">
+              <div class="flex flex-col justify-between gap-[10px]"> 
+                <div class="p-[6px]"> <img src="assets/prod1Img.png" alt="product image" class="object-cover h-full w-full" ></div>
+                <div class="p-[6px]"> <img src="assets/prod2Img.png" alt="product image" class="object-cover h-full w-full" ></div>
+                <div class="p-[6px]"> <img src="assets/prod3Img.png" alt="product image" class="object-cover h-full w-full" ></div>
+                <div class="p-[6px]"> <img src="assets/prod4Img.png" alt="product image" class="object-cover h-full w-full" ></div>
+                <div class="p-[6px]"> <img src="assets/prod5Img.png" alt="product image" class="object-cover h-full w-full" ></div>
+                <div class="p-[6px]"> <img src="assets/prod6Img.png" alt="product image" class="object-cover h-full w-full" ></div>
+                <div class="p-[6px]"> <img src="assets/prod7Img.png" alt="product image" class="object-cover h-full w-full" ></div>
+              </div>
+              <div class="pb-[16px] flex-grow">
+                <img src="assets/produ6.svg" alt="model wearing a red jacket" class="object-cover h-full w-full">
+              </div>
+            </div>
+
+            <div class=" flex flex-col items-start w-full justify-between h-fit">
+              <p class="font-volkhov text-[14px] leading-[20px] text-[#666666] uppercase">Fasco</p>
+              <!--Product Info-->
+              <div class="pt-[5px] flex justify-between w-full">
+                <p class="font-volkhov text-[30px] leading-[42px]">Denim Jacket</p>
+                <div class="flex items-center justify-center border  border-[#EEEEEE] rounded-full h-[45px] w-[45px]">
+                  <img src="assets/favoriteIcon.png" alt="favorite icon" >
+                </div>
+              </div>
+
+              <!--Rating-->
+              <div class="flex gap-[8px]">
+                <div class="flex gap-0 py-[3px] w-fit ">
+                  <img src="assets/ratingstar-filled.png" alt="rating star" class="w-full h-full">
+                  <img src="assets/ratingstar-filled.png" alt="rating star" class="w-full h-full">
+                  <img src="assets/ratingstar-filled.png" alt="rating star" class="w-full h-full">
+                  <img src="assets/ratingstar-filled.png" alt="rating star" class="w-full h-full">
+                  <img src="assets/ratingstar-empty.png" alt="rating star empty" class="w-full h-full">
+                </div>
+                <p class="font-jost text-[15px] leading-[22.5px]">(3)</p>
+              </div>
+              <!--price-->
+              <div class="flex gap-[8px] pt-[19px] items-center justify-between w-fit">
+                <p class="font-volkhov font-medium text-[24px] leading-[32px]">$39.00 </p>
+                <p class="font-jost text-[#666666] line-through text-[16px] leading-[19px]">$59.00</>
+                <p class="bg-[#DA3F3F] text-white rounded-[11px] font-jost uppercase leading-[16px] text-[11px] px-[10px] py-[2.5px] font-medium">Save <span> </span>33%</p>
+              </div>
+
+              <div class="pt-[30px] space-y-[30px] w-full ">
+                <div class="flex items-center justify-between w-fit gap-[10px]">
+                  <span><img src="assets/eye-logo.png"></span>
+                  <p class="font-poppins leading-[24px] text-[#8A8A8A]">24 people are viewing this right now</p>
+                </div>
+
+                <div class="w-full bg-[#FDEFEE] border border-[#F8CCCC] rounded-[4px] text-[#FF706B] flex justify-between items-center px-[21px] py-[10px]">
+                  <p class="font-volkhov text-[18px] leading-[28px]"> Hurry up! Sale ends in: </p>
+                    <p class="font-jost font-semibold text-[20px] leading-[32px] space-x-[14px]">
+                      <span>00</span>
+                      <span>:</span>
+                      <span>05</span>
+                      <span>:</span>
+                      <span>59</span>
+                      <span>:</span>
+                      <span>47</span>
+                    </p>
+                  </div>
+
+                  <div class="space-y-[12px]">
+                    <p class="text-[#666666] font-jost leading-[24px]">Only <span class="font-bold">9</span> item(s) left in stock!</p>
+                    <div class="w-full bg-[#DEDEDE] rounded-[2px] h-[5px]">
+                      <div class="bg-[#EF2D2D] w-[30px] h-full rounded-[2px]"></div>
+                    </div>
+                  </div>
+
+                  <!--Product details selection-->
+                <div class="space-y-[14px]">
+                  <!--size-->
+                  <div class="space-y-[12px]">
+                    <p class="capitalize font-volkhov font-bold">size: <span class="font-normal">M</span></p>
+                    <div class="font-poppins text-[18px] leading-[27px] flex gap-[10px] uppercase">
+                      <p class=" flex items-center justify-center border border-black rounded-[5px] text-white bg-black py-[9px] px-[15px] min-w-[45px] w-fit active:bg-black active:text-white active:border-black ">M</p>
+                      <p class=" flex items-center justify-center border border-[#EEEEEE] rounded-[5px] py-[9px] px-[15px] min-w-[45px] w-fit active:bg-black active:text-white active:border-black">L</p>
+                      <p class=" flex items-center justify-center border border-[#EEEEEE] rounded-[5px] py-[9px] px-[15px] min-w-[45px] w-fit active:bg-black active:text-white active:border-black">xl</p>
+                      <p class=" flex items-center justify-center border border-[#EEEEEE] rounded-[5px] py-[9px] px-[15px] min-w-[45px] w-fit active:bg-black active:text-white active:border-black">xxl</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <!--color-->
+                    <p class="capitalize font-volkhov font-bold">Color: Blue</p>
+                    <div class="flex gap-1.5 mt-[13px] py-2">
+                      <span class="w-[40px] h-[40px] rounded-full bg-[#8DB4D2] shadow-[inset_0_0_0_4px_#FFFFFF,0_0_0_1px_#000000] inline-block cursor-pointer"></span>
+                      <span class="w-[40px] h-[40px] rounded-full bg-black shadow-[inset_0_0_0_1px_#0000001A] cursor-pointer"></span>
+                      <span class="w-[40px] h-[40px] rounded-full bg-[#FFD1DC] cursor-pointer shadow-[inset_0_0_0_1px_#0000001A]"></span>
+                    </div>
+                  </div>
+
+                  <!--Quantity-->
+                  <div class="pt-[15px] space-y-[13px]">
+                    <p class="capitalize font-volkhov">Quantity</p>
+                    <div class="flex justify-between gap-[30px] w-full">
+                      <div class="w-fit font-jost flex gap-0 border border-[#EEEEEE] rounded-[4px]">
+                        <span class="py-[17px] px-[15.5px] flex justify-center items-center">-</span>
+                         <p class="py-[17px] px-[15.5px] flex justify-center items-center">1</p>
+                         <span class="py-[17px] px-[15.5px] flex justify-center items-center">+</span>
+                      </div>
+
+                      <button class="w-full text-center font-volkhov leading-[24px] border rounded-[5px] cursor-pointer ">Add to cart</button>
+
+                    </div>
+                  </div>
+                  
+
+
+                </div>
+
+                <!--Actions-->
+                <div class=" border-b border-b-[#EEEEEE] pb-[12px] flex gap-[30px] pt-[33px]">
+                  <div class="flex gap-[8px]">
+                    <img src="assets/compare-icon.png" alt="compare icon">
+                    <p class="font-jost leading-[24px]">Compare</p>
+                  </div>
+                    <div class="flex gap-[8px] flex-shrink-0">
+                    <img src="assets/ask-icon.png" alt="question mark icon">
+                    <p class="font-jost leading-[24px] text-nowrap">Ask a question</p>
+                  </div>
+                    <div class="flex gap-[8px]">
+                    <img src="assets/share-icon.png" alt="share icon">
+                    <p class="font-jost leading-[24px]">Share</p>
+                  </div>
+                </div>
+
+                <!--Delivery info-->
+                <div class="space-y-[8px]">
+                  <div class="flex items-center">
+                    <img src="assets/deliveryTruck-icon.png" alt="delivery track icon">
+                    <p class="font-volkhov font-bold ml-[6.5px]">Estimated Delivery:</p>
+                    <p class="font-jost">Jul 30 - Aug 03</p>
+                  </div>
+                    <div class="flex items-center">
+                    <img src="assets/shipping.png" alt="delivery track icon">
+                    <p class="font-volkhov font-bold ml-[6.5px]">Free Shipping & Returns:</p>
+                    <p class="font-jost"> On all orders over $75</p>
+                  </div>
+                </div>
+
+                <!--Payment Methods-->
+                <div class="bg-[#F8F8F8] py-[20px] flex flex-col gap-[21px] items-center justify-center rounded-[5px]">
+                  <img src="assets/payment-methods.png" alt="payment methods">
+                  <p class="font-volkhov">Guarantee safe & secure checkout</p>
+                </div>
+
+
+
+
+
+                </div>
+
+              </div>
+            </div>
+
+        </section>
+
+        <section class="relative w-full overflow-hidden bg-[#F8F8F8] mt-[26px]">
+        <!-- LAYER 1: Full Backdrop -->
+        <div class="absolute inset-0 pointer-events-none z-0">
+          <!-- Gray right half with diagonal cut -->
+          <div
+            class="absolute inset-0 bg-[#DADADA]"
+            style="clip-path: polygon(55% 0, 100% 0, 100% 100%, 49% 100%)"
+          ></div>
+
+          <!-- Diagonal black line matching the shifted polygon cut -->
+          <svg
+            class="absolute inset-0 w-full h-full"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            <line
+              x1="55"
+              y1="0"
+              x2="49"
+              y2="100"
+              stroke="#000000"
+              stroke-width="2"
+              vector-effect="non-scaling-stroke"
+            />
+          </svg>
+        </div>
+
+        <!-- LAYER 2: Fixed 1280px Content Container -->
+        <div
+          class="relative z-10 max-w-[1280px] mx-auto w-full h-[570px] grid grid-cols-2"
+        >
+          <!-- Left Div: Picture & Annotations -->
+          <div class="relative w-full h-full">
+            <!-- Image -->
+            <img
+              src="./assets/fasco-icon-section-3.svg"
+              alt="Woman wearing the Peaky Blinders outfit"
+              class="absolute bottom-0 left-0 h-[93%] w-auto max-w-none z-10 object-contain object-bottom"
+            />
+
+            <!-- Annotation Lines -->
+            <svg
+              class="absolute inset-0 w-full h-full z-20 pointer-events-none"
+              viewBox="0 3 690 550"
+              preserveAspectRatio="none"
+            >
+              <g fill="none" stroke="black" stroke-width="1">
+                <!-- Flat Cap: starts at cap circle (338,75), bends to label (442,94) -->
+                <polyline
+                  points="358,75 395,75 432,94"
+                  vector-effect="non-scaling-stroke"
+                />
+
+                <!-- Suspender: starts at suspender strap (250,165), bends to label (149,185) -->
+                <polyline
+                  points="250,165 190,165 149,185"
+                  vector-effect="non-scaling-stroke"
+                />
+
+                <!-- Hugo Boss (shirt/upper): starts at shirt circle (312,225), bends to label (400,260) -->
+                <polyline
+                  points="312,225 370,225 400,260"
+                  vector-effect="non-scaling-stroke"
+                />
+
+                <!-- Hugo Boss (trousers/lower): starts at trousers circle (265,315), bends to label (150,335) -->
+                <polyline
+                  points="215,315 120,315 100,340"
+                  vector-effect="non-scaling-stroke"
+                />
+
+                <!-- Santoni (shoes): starts at shoe/hem circle (312,475), bends to label (371,493) -->
+                <polyline
+                  points="325,475 380,475 395,493"
+                  vector-effect="non-scaling-stroke"
+                />
+              </g>
+            </svg>
+
+            <!-- Circles -->
+            <span
+              class="absolute z-30 w-[14px] h-[14px] rounded-full bg-[#FFFFFFA1] border -translate-x-1/2 -translate-y-1/2 left-[50.7%] top-[13.1%]"
+            ></span>
+            <span
+              class="absolute z-30 w-[14px] h-[14px] rounded-full bg-[#FFFFFFA1] border -translate-x-1/2 -translate-y-1/2 left-[38.1%] top-[29%]"
+            ></span>
+            <span
+              class="absolute z-30 w-[14px] h-[14px] rounded-full bg-[#FFFFFFA1] border -translate-x-1/2 -translate-y-1/2 left-[44%] top-[40.5%]"
+            ></span>
+            <span
+              class="absolute z-30 w-[14px] h-[14px] rounded-full bg-[#FFFFFFA1] border -translate-x-1/2 -translate-y-1/2 left-[32.4%] top-[56.3%]"
+            ></span>
+            <span
+              class="absolute z-30 w-[14px] h-[14px] rounded-full bg-[#FFFFFFA1] border -translate-x-1/2 -translate-y-1/2 left-[45%] top-[85.3%]"
+            ></span>
+
+            <!-- Labels -->
+            <span
+              class="absolute z-30 flex items-center justify-center px-3 py-1.5 border bg-[#FFFFFF69] backdrop-blur-xs font-poppins whitespace-nowrap left-[63%] top-[16.5%]"
+              >Flat Cap</span
+            >
+            <span
+              class="absolute z-30 flex items-center justify-center px-3 py-1.5 border bg-[#FFFFFF69] backdrop-blur-xs font-poppins whitespace-nowrap left-[5%] top-[34.5%]"
+              >Suspender</span
+            >
+            <span
+              class="absolute z-30 flex items-center justify-center px-3 py-1.5 border bg-[#FFFFFF69] backdrop-blur-xs font-poppins whitespace-nowrap left-[58%] top-[48%]"
+              >Hugo Boss</span
+            >
+            <span
+              class="absolute z-30 flex items-center justify-center px-3 py-1.5 border bg-[#FFFFFF69] backdrop-blur-xs font-poppins whitespace-nowrap left-[-2%] top-[61.5%]"
+              >Hugo Boss</span
+            >
+            <span
+              class="absolute z-30 flex items-center justify-center px-3 py-1.5 border bg-[#FFFFFF69] backdrop-blur-xs font-poppins whitespace-nowrap left-[59%] top-[89%]"
+              >Santoni</span
+            >
+          </div>
+
+          <!-- Right Div: Description -->
+          <div class="flex flex-col justify-center pl-[120px] space-y-[20px]">
+            <span class="font-poppins text-[#484848]"> Women Collection </span>
+            <h2 class="font-volkhov text-[46px] text-[#484848]">
+              Peaky Blinders
+            </h2>
+            <h3 class="font-poppins underline text-black uppercase">
+              DESCRIPTION
+            </h3>
+            <p class="font-poppins text-[#767676] max-w-[515px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque
+              duis ultrices sollicitudin. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Scelerisque duis.
+            </p>
+            <div class="flex gap-[15px] items-center">
+              <span class="font-poppins text-[#767676]">Size:</span>
+              <span
+                class="font-poppins text-white bg-black py-[6px] px-[20px] rounded-[10px]"
+              >
+                M
+              </span>
+            </div>
+            <p class="font-poppins font-medium text-black">
+              <span class="text-[28px]">$100</span
+              ><span class="text-[24px]">.00</span>
+            </p>
+            <button
+              type="button"
+              class="w-fit px-[70px] py-[20px] bg-black cursor-pointer rounded-[10px] text-white font-poppins shadow-[0px_20px_35px_0px_#00000026]"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full px-[24px]">
+        <div
+          class="flex justify-between items-center font-poppins text-[#484848] py-[72px] max-w-[1280px] mx-auto"
+        >
+          <div class="flex space-x-[13px]">
+            <img src="assets/qualityIcon.svg" alt="high quality icon" />
+            <div>
+              <p class="font-medium text-[20px]">High Quality</p>
+              <p class="leading-[26px]">crafted from top materials</p>
+            </div>
+          </div>
+
+          <div class="flex space-x-[13px]">
+            <img src="assets/warrantytyIcon.svg" alt="high quality icon" />
+            <div>
+              <p class="font-medium text-[20px]">Warrany Protection</p>
+              <p class="leading-[26px]">Over 2 years</p>
+            </div>
+          </div>
+
+          <div class="flex space-x-[13px]">
+            <img src="assets/shippingIcon.svg" alt="high quality icon" />
+            <div>
+              <p class="font-medium text-[20px]">Free Shipping</p>
+              <p class="leading-[26px]">Order over 150 $</p>
+            </div>
+          </div>
+
+          <div class="flex space-x-[13px]">
+            <img src="assets/supportIcon.svg" alt="high quality icon" />
+            <div>
+              <p class="font-medium text-[20px]">24 / 7 Support</p>
+              <p class="leading-[26px]">Dedicated support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <section class="bg-[#FAFAFA] pt-[100px] w-full overflow-hidden">
+        <div class="max-w-[1280px] py-[82px] mx-auto flex space-x-[36px]">
+          <div class="space-y-[50px] flex-shrink-0">
+            <div class="space-y-[20px] max-w-[444px]">
+              <h2 class="font-volkhov text-[46px] text-[#484848]">
+                Deals Of The Month
+              </h2>
+              <p class="font-poppins text-[#8A8A8A] leading-[26px] pl-[8px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque
+                duis ultrices sollicitudin
+              </p>
+              <button
+                class="bg-black text-white px-[70px] py-[20px] rounded-[10px] shadow-[0px_20px_35px_0px_#00000026] capitalize"
+              >
+                buy now
+              </button>
+            </div>
+
+            <div class="space-y-[15px] max-w-[394px]">
+              <p
+                class="font-poppins font-medium text-[28px] text-[#484848] pr-[33px]"
+              >
+                Hurry, Before It’s Too Late!
+              </p>
+              <div class="flex space-x-[30px]">
+                <div class="space-y-[15px] items-center text-center">
+                  <div
+                    class="bg-white py-[22px] px-[12px] rounded-[10px] shadow-[0px_4px_14px_1px_#00000029] w-[76px] h-[76px] flex justify-center items-center"
+                  >
+                    <span class="font-digital text-[32px]">02</span>
+                  </div>
+                  <p
+                    class="font-poppins text-[24px] leading-[120%] text-[#484848] capitalize"
+                  >
+                    Days
+                  </p>
+                </div>
+
+                <div class="space-y-[15px] items-center text-center">
+                  <div
+                    class="bg-white py-[22px] px-[12px] rounded-[10px] shadow-[0px_4px_14px_1px_#00000029] w-[76px] h-[76px] flex justify-center items-center"
+                  >
+                    <span class="font-digital text-[32px]">06</span>
+                  </div>
+                  <p
+                    class="font-poppins text-[24px] leading-[120%] text-[#484848] capitalize"
+                  >
+                    Days
+                  </p>
+                </div>
+
+                <div class="space-y-[15px] items-center text-center">
+                  <div
+                    class="bg-white py-[22px] px-[12px] rounded-[10px] shadow-[0px_4px_14px_1px_#00000029] w-[76px] h-[76px] flex justify-center items-center"
+                  >
+                    <span class="font-digital text-[32px]">05</span>
+                  </div>
+                  <p
+                    class="font-poppins text-[24px] leading-[120%] text-[#484848] capitalize"
+                  >
+                    minss
+                  </p>
+                </div>
+
+                <div class="space-y-[15px] items-center text-center">
+                  <div
+                    class="bg-white py-[22px] px-[12px] rounded-[10px] shadow-[0px_4px_14px_1px_#00000029] w-[76px] h-[76px] flex justify-center items-center"
+                  >
+                    <span class="font-digital text-[32px]">30</span>
+                  </div>
+                  <p
+                    class="font-poppins text-[24px] leading-[120%] text-[#484848] capitalize"
+                  >
+                    sec
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex relative space-x-[24px] h-[582px]">
+            <!-- arrows -->
+            <div class="flex space-x-[16px] items-end">
+              <div
+                class="w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full shadow-[0px_4px_14px_1px_#00000029] hover:cursor-pointer"
+              >
+                <img src="assets/icon-left.svg" />
+              </div>
+              <div
+                class="w-[48px] h-[48px] bg-white flex items-center justify-center rounded-full shadow-[0px_4px_14px_1px_#00000029] hover:cursor-pointer"
+              >
+                <img src="assets/icon-right.svg" />
+              </div>
+            </div>
+
+            <!-- gallery -->
+            <div class="h-[582px] flex gap-[24px]">
+              <!-- first img -->
+              <div class="relative w-[404px]">
+                <img
+                  src="assets/fasco-icon-section1.svg"
+                  class="object-cover w-full"
+                />
+                <div
+                  class="bg-white py-[32px] px-[26px] space-y-[8px] absolute bottom-[24px] left-[24px]"
+                >
+                  <div
+                    class="flex justify-center items-center space-x-[8px] font-poppins text-[#484848] leading-[150%]"
+                  >
+                    <p>01</p>
+                    <div
+                      class="border border-[#484848] w-[27px] h-0 bg-[#484848] opacity-[32%]"
+                    ></div>
+                    <p>Spring Sale</p>
+                  </div>
+                  <p
+                    class="font-poppins text-[#484848] text-[28px] leading-[120%]"
+                  >
+                    30% OFF
+                  </p>
+                </div>
+              </div>
+
+              <!-- second img -->
+
+              <div class="space-y-[69px] flex flex-col items-start">
+                <div class="h-[468px] w-[372px]">
+                  <img
+                    src="assets/fasco-icon-section2.svg"
+                    class="h-full w-full object-contain"
+                  />
+                </div>
+
+                <!-- navigation dots -->
+                <div class="flex gap-[20px] flex justify-center items-center">
+                  <div
+                    class="w-[27px] h-[27px] rounded-full border flex justify-center items-center"
+                  >
+                    <span
+                      class="w-[11px] h-[11px] bg-black rounded-full"
+                    ></span>
+                  </div>
+                  <div
+                    class="w-[11px] h-[11px] rounded-full bg-[#B6B6B6]"
+                  ></div>
+                  <div
+                    class="w-[11px] h-[11px] rounded-full bg-[#B6B6B6]"
+                  ></div>
+                  <div
+                    class="w-[11px] h-[11px] rounded-full bg-[#B6B6B6]"
+                  ></div>
+                </div>
+              </div>
+
+              <!--Third img-->
+              <div>
+                <div class="h-[468px] w-[372px]">
+                  <img
+                    src="assets/fasco-icon-section3.svg"
+                    class="h-full w-full object-contain object-left"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="max-w-[1400px] mx-auto mt-[150px] flex justify-between items-center"
+      >
+        <img
+          class="object-contain"
+          src="assets/fasco-section6-card1.svg"
+          alt=""
+        />
+        <div class="text-center space-y-[20px]">
+          <p class="font-volkhov text-[46px] text-[#484848]">
+            Subscribe To Our Newsletter
+          </p>
+          <p class="px-[10px] font-poppins leading-[26px] text-[#8A8A8A]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+            sollicitudin
+          </p>
+          <input
+            type="text"
+            placeholder="michael@ymail.com"
+            class="mt-[10px] py-[28px] pl-[30px] text-left w-full shadow-[0px_3.02px_3.15px_0px_#00000002,_0px_13.28px_6.52px_0px_#00000004,_0px_32.6px_13px_0px_#00000005,_0px_62.79px_25.48px_0px_#00000006,_0px_105.65px_46.85px_0px_#00000008,_0px_163px_80px_0px_#0000000A]"
+          />
+
+          <button
+            class="font-poppins text-white bg-black text-center rounded-[10px] py-[20px] px-[44px] shadow-[0px_20px_35px_0px_#00000026]"
+          >
+            Subscribe Now
+          </button>
+        </div>
+
+        <img
+          class="object-contain"
+          src="assets/fasco-section6-card2.svg"
+          alt=""
+        />
+      </section>
+    </main>
+        <footer
+      class="border border-t border-[#DEDFE1] space-y-[50px] py-[30px] mt-[50px]"
+    >
+      <div class="flex justify-between items-center max-w-[1280px] mx-auto">
+        <div class="font-volkhov text-[32px] text-[#484848]">FASCO</div>
+        <div class="flex items-center space-x-[70px] text-[#484848]">
+          <a href="homepage.html">Home</a>
+          <a href="shopPage.html">Shop</a>
+          <a href="productPage.html">Products</a>
+          <a href="#" class="flex items-center gap-1.5 cursor-pointer">
+            <span>Pages</span>
+            <img
+              src="assets/arrowDown.svg"
+              alt="Dropdown"
+              class="object-contain"
+            />
+          </a>
+        </div>
+      </div>
+      <p
+        class="font-poppins text-[12px] leading-[26px] text-[#484848] text-center"
+      >
+        Copyright © 2022 FASCO . All Rights Reseved.
+      </p>
+    </footer>
+  </body>
+</html>
