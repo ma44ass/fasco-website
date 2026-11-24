@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FASCO | Recovery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        /* fonts */
+        --font-poppins: "Poppins", sans-serif;
+        --font-volkhov: "Volkhov", serif;
+        --font-jost: "Jost", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flex items-center justify-center h-[100vh]">
+      <div
+        class="max-w-[1920px] mx-auto grid grid-cols-2 border border-[#DBDBDB] items-center rounded-tr-[30px] rounded-br-[30px] gap-[187px] h-[95vh]"
+      >
+        <!--Image-->
+        <div class="max-w-[949px] h-full overflow-hidden">
+          <img
+            src="assets/signmodel.png"
+            alt=""
+            class="object-cover object-top scale-[1.25] origin-top h-full "
+          />
+        </div>
+
+        <!--form-->
+        <div class="mr-[81px] pb-[26px] ">
+          <div class="flex flex-col justify-around gap-[80px]">
+            <h1 class="font-volkhov text-[66px] text-[#484848]">FASCO</h1>
+            <div
+              class="max-w-[628px] mx-auto flex flex-col justify-between gap-[20px]"
+            >
+              <p class="font-volkhov text-[30px] leading-[40px]">
+                Enter Your New Password
+              </p>
+
+              <div class="flex flex-col justify-between">
+                <form class="space-y-[29px] mt-[40px]">
+                  
+                        <input
+                        type="password"
+                        class="w-full font-poppins tracking-[8%] leading-[40px] border-b border-b-[#9D9D9D] placeholder:text-[#9D9D9D]"
+                        placeholder="New Password"
+                        />
+                          <input
+                        type="password"
+                        class="w-full font-poppins tracking-[8%] leading-[40px] border-b border-b-[#9D9D9D] placeholder:text-[#9D9D9D]"
+                        placeholder="Confirmation Password"
+                        />
+
+                  <div class="px-[39px] space-y-[19px]">
+                    <button
+                      class="bg-[#5B86E5] text-white rounded-[10px] py-[10px] font-poppins font-semibold tracking-[8%] leading-[40px] w-full"
+                    >
+                      <a href="homepage.html">Submit</a>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <p class="font-poppins leading-[40px] text-right">
+              FASCO Terms & Codnitions
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
