@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FASCO | Sign in</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        /* fonts */
+        --font-poppins: "Poppins", sans-serif;
+        --font-volkhov: "Volkhov", serif;
+        --font-jost: "Jost", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="flex items-center justify-center h-[100vh]">
+      <div
+        class="max-w-[1920px] mx-auto grid grid-cols-2 border border-[#DBDBDB] items-center rounded-tr-[30px] rounded-br-[30px] gap-[187px]"
+      >
+        <!--Image-->
+        <div class="max-w-[949px] h-full">
+          <img
+            src="assets/signmodel.png"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+        </div>
+
+        <!--form-->
+        <div class="mr-[81px] pb-[26px]">
+          <div class="flex flex-col justify-between gap-[75px] pt-[40px]">
+            <h1 class="font-volkhov text-[66px] text-[#484848]">FASCO</h1>
+            <div
+              class="max-w-[628px] mx-auto flex flex-col justify-between gap-[20px]"
+            >
+              <p class="font-volkhov text-[30px] leading-[40px]">
+                Sign In To FASCO
+              </p>
+              <div class="flex flex-col justify-between">
+                <!--OTP signin-->
+                <div class="flex justify-between items-center">
+                  <button
+                    class="flex gap-[13px] px-[32px] py-[7px] items-center border border-[#5B86E5] rounded-[8px] font-poppins leading-[40px] tracking-[8%] text-nowrap w-fit"
+                  >
+                    <span
+                      ><img src="assets/google-icon.png" alt="Google icon"
+                    /></span>
+                    Sign up with Google
+                  </button>
+
+                  <button
+                    class="flex gap-[13px] px-[32px] py-[7px] items-center border border-[#5B86E5] rounded-[8px] font-poppins leading-[40px] tracking-[8%] text-nowrap w-fit"
+                  >
+                    <span
+                      ><img src="assets/email-icon.png" alt="Google icon"
+                    /></span>
+                    Sign up with Email
+                  </button>
+                </div>
+
+                <div
+                  class="w-fit flex items-center justify-between gap-[18px] mx-auto mt-[70px]"
+                >
+                  <div class="bg-[#838383] w-[30px] h-[5px]"></div>
+                  <p
+                    class="uppercase text-[#838383] font-poppins text-[30px] font-bold leading-[40px] tracking-[8%]"
+                  >
+                    or
+                  </p>
+                  <div class="bg-[#838383] w-[30px] h-[5px]"></div>
+                </div>
+                <!--Email sign in-->
+                <form class="space-y-[29px] mt-[40px]">
+                  <input
+                    type="email"
+                    class="w-full font-poppins tracking-[8%] leading-[40px] border-b border-b-[#9D9D9D] placeholder:text-[#9D9D9D]"
+                    placeholder="Email"
+                  />
+
+                  <input
+                    type="password"
+                    class="w-full font-poppins tracking-[8%] leading-[40px] border-b border-b-[#9D9D9D] placeholder:text-[#9D9D9D]"
+                    placeholder="Password"
+                  />
+
+                  <div class="px-[39px] space-y-[19px]">
+                    <button
+                      class="bg-black text-white rounded-[10px] py-[10px] font-poppins font-semibold tracking-[8%] leading-[40px] w-full"
+                    >
+                      <a href="homepage.html">Sign up</a>
+                    </button>
+                    <button
+                      class="border border-[#5B86E5] text-[#5B86E5] rounded-[10px] py-[10px] font-poppins font-semibold tracking-[8%] leading-[40px] w-full"
+                    >
+                      Register Now
+                    </button>
+                    <p
+                      class="capitalize text-[#5B86E5] font-poppins font-bold leading-[40px] tracking-[8%] text-right mt-[-13px]"
+                    >
+                      <a href="forgotPassword.html">forgot password?</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <p class="font-poppins leading-[40px] text-right">
+              FASCO Terms & Codnitions
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
